@@ -1,6 +1,6 @@
-import Image1 from "../../assets/images/tic-tac-toe.png";
-import Image2 from "../../assets/images/library.png";
-import Image3 from "../../assets/images/todo-list.png";
+import Image1 from "../assets/images/tic-tac-toe.png";
+import Image2 from "../assets/images/library.png";
+import Image3 from "../assets/images/todo-list.png";
 
 export const imageSlider = (() => {
   const storedImages = [Image1, Image2, Image3];

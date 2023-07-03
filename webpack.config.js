@@ -10,7 +10,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: "Dynamic User Interfaces",
-      //favicon: "favicon.ico",
+      favicon: "src/assets/images/favicon.ico",
     }),
   ],
   output: {
