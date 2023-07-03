@@ -1,0 +1,44 @@
+.image-slider-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.images-container {
+  display: flex;
+  gap: 20px;
+}
+
+.images-container img {
+  width: 600px;
+  border-radius: 20px;
+}
+
+.images-container button {
+  cursor: pointer;
+}
+
+.points-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.points-container button {
+  width: 20px;
+  height: 20px;
+
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.active-point {
+  background-color: var(--buttons-color);
+}
+
+@media (max-width: 800px) {
+  .images-container img {
+    width: 300px;
+  }
+}

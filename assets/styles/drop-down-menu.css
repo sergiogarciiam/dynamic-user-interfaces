@@ -1,7 +1,3 @@
-.drop-down-menu-container {
-  margin-bottom: 200px;
-}
-
 .menu-container,
 .drop-down-menu-container {
   position: relative;
@@ -30,8 +26,8 @@
   text-align: left;
 
   padding: 10px;
-  color: #fff;
-  background-color: #222;
+  color: var(--letter-buttons-color);
+  background-color: var(--buttons-color);
   border: none;
 }
 

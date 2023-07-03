@@ -1,3 +1,14 @@
+.mobile-button {
+  font-size: 1.1rem;
+  cursor: pointer;
+
+  padding: 10px;
+  color: #fff;
+  background-color: cadetblue;
+  border: none;
+  border-radius: 10px;
+}
+
 .mobile-menu-container {
   position: absolute;
   top: 0;
@@ -8,20 +19,30 @@
   flex-direction: column;
   gap: 20px;
 
-  background-color: cadetblue;
-  transition: 1s;
+  background-color: var(--main-color);
 }
 
 .mobile-menu-container > button {
-  color: #fff;
+  color: var(--letter-buttons-color);
   font-size: 2rem;
   font-weight: bolder;
-  height: 33%;
-  background-color: cadetblue;
+  height: 30%;
+  background-color: var(--main-color);
   border: none;
   cursor: pointer;
 }
 
+.mobile-button:hover,
 .mobile-menu-container > button:hover {
-  background-color: rgb(69, 129, 131);
+  background-color: var(--secondary-color);
+}
+
+.mobile-menu-container > button:first-child {
+  align-self: flex-end;
+  height: 10%;
+  padding: 20px;
+}
+
+.hide-overflow {
+  overflow: hidden;
 }
