@@ -1,14 +1,12 @@
 import { createDropDownMenu } from "./dropDownMenu";
-
-const { CE } = require("../util/shortcuts");
+import { mobileMenu } from "./mobileMenu";
 
 export function createMainContainer() {
-  const mainContainer = CE("div");
-  const title = CE("h1");
-  const titleDropDown = CE("h2");
-  const dropDownMenu = createDropDownMenu();
-  const titleMobile = CE("h2");
-  const titleImages = CE("h2");
+  const mainContainer = document.createElement("div");
+  const title = document.createElement("h1");
+  const titleDropDown = document.createElement("h2");
+  const titleMobile = document.createElement("h2");
+  const titleImages = document.createElement("h2");
 
   mainContainer.classList.add("main-container");
 
@@ -18,9 +16,13 @@ export function createMainContainer() {
   titleImages.textContent = "Image Slider";
 
   mainContainer.appendChild(title);
+
   mainContainer.appendChild(titleDropDown);
-  mainContainer.appendChild(dropDownMenu);
+  mainContainer.appendChild(createDropDownMenu());
+
   mainContainer.appendChild(titleMobile);
+  mainContainer.appendChild(mobileMenu.createMobileMenuButton());
+
   mainContainer.appendChild(titleImages);
 
   document.body.appendChild(mainContainer);

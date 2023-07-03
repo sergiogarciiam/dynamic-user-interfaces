@@ -1,12 +1,10 @@
-import { CE, $ } from "../util/shortcuts";
-
 export function createDropDownMenu() {
-  const dropDownMenu = CE("div");
-  const mainButton = CE("button");
-  const menu = CE("div");
-  const homeButton = CE("button");
-  const settingsButton = CE("button");
-  const exitButton = CE("button");
+  const dropDownMenu = document.createElement("div");
+  const mainButton = document.createElement("button");
+  const menu = document.createElement("div");
+  const homeButton = document.createElement("button");
+  const settingsButton = document.createElement("button");
+  const exitButton = document.createElement("button");
 
   dropDownMenu.classList.add("drop-down-menu-container");
   mainButton.classList.add("main-button");
@@ -30,6 +28,6 @@ export function createDropDownMenu() {
 }
 
 function activeMenu() {
-  const menu = $(".menu-container");
+  const menu = document.querySelector(".menu-container");
   menu.classList.toggle("active-menu");
 }

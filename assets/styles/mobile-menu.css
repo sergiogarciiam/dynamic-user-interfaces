@@ -1,0 +1,27 @@
+.mobile-menu-container {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  background-color: cadetblue;
+  transition: 1s;
+}
+
+.mobile-menu-container > button {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bolder;
+  height: 33%;
+  background-color: cadetblue;
+  border: none;
+  cursor: pointer;
+}
+
+.mobile-menu-container > button:hover {
+  background-color: rgb(69, 129, 131);
+}
