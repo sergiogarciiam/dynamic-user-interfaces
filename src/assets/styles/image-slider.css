@@ -36,9 +36,3 @@
 .active-point {
   background-color: var(--buttons-color);
 }
-
-@media (max-width: 800px) {
-  .images-container img {
-    width: 300px;
-  }
-}
